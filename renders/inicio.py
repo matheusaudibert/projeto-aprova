@@ -154,8 +154,8 @@ def render():
     <p style='font-size: 17px; color: white;'>Aqui na APROVA, você pode fazer um <strong>teste vocacional (com IA)</strong> que te ajuda a descobrir quais áreas combinam mais com seus interesses, habilidades e valores.</p>
 """, unsafe_allow_html=True)
 
-    if st.button("Fazer o teste", use_container_width=True, key="carreira_button", type="primary"):
-      switch_to_tab("Carreira")
+    if st.button("Fazer o teste", use_container_width=True, key="teste_button", type="primary"):
+      st.switch_page("pages/teste.py")
   
   def read_html():
     with open("core/index.html") as f:
