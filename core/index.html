@@ -1,0 +1,49 @@
+<script>
+  const streamlitDoc = window.parent.document;
+
+  const buttons = Array.from(streamlitDoc.querySelectorAll(".stButton > button"));
+
+  console.log(buttons);
+
+  const button0 = buttons.find((el) => el.innerText === "Conhecer os vestibulares");
+  const button1 = buttons.find((el) => el.innerText === "Gerar resumos");
+  const button2 = buttons.find((el) => el.innerText === "Praticar");
+  const button3 = buttons.find((el) => el.innerText === "Acessar provas");
+  const button4 = buttons.find((el) => el.innerText === "Ler textos");
+  const button5 = buttons.find((el) => el.innerText === "Corrigir texto");
+  const button6 = buttons.find((el) => el.innerText === "Checar livros");
+  const button7 = buttons.find((el) => el.innerText === "Ver datas");
+  const button8 = buttons.find((el) => el.innerText === "Falar com o Aprovadinho");
+  const button9 = buttons.find((el) => el.innerText === "Fazer o teste");
+
+  // Função para aplicar estilo de botão com efeito pressionado
+  function estilizarBotao(botao, corNormal, corPressionado) {
+    if (!botao) return;
+
+    botao.style.backgroundColor = corNormal;
+    botao.style.borderColor = corNormal;
+    botao.style.color = "white";
+    botao.style.transition = "background-color 0.2s ease";
+
+    botao.onmousedown = () => {
+      botao.style.backgroundColor = corPressionado;
+    };
+    botao.onmouseup = () => {
+      botao.style.backgroundColor = corNormal;
+    };
+    botao.onmouseleave = () => {
+      botao.style.backgroundColor = corNormal;
+    };
+  }
+
+  estilizarBotao(button0, "#36e096", "#29ab73");
+  estilizarBotao(button1, "#f26679", "#c75463");
+  estilizarBotao(button2, "#f26679", "#c75463");
+  estilizarBotao(button3, "#F697DB", "#e980c7");
+  estilizarBotao(button4, "#FFB530", "#db9d2c");
+  estilizarBotao(button5, "#d39eff", "#b185d6");
+  estilizarBotao(button6, "#7144EE", "#633ccf");
+  estilizarBotao(button7, "#b0e1ff", "#a2cee8");
+  estilizarBotao(button8, "#60B4FF", "#4A9AD9");
+  estilizarBotao(button9, "#f08671", "#d97966");
+</script>
