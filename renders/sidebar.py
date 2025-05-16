@@ -16,8 +16,6 @@ def render():
 
   st.markdown("# 🎓 Aprova")  
   st.markdown("*Este projeto foi desenvolvido durante a **Imersão IA** da **:blue[Alura]** em parceria com o **:blue[G]:red[o]:orange[o]:blue[g]:green[l]:red[e] :violet[Gemini]***.")
-    
-  st.write("")
   
   st.markdown("# 🎈 Extras") 
   st.text("Conheça o Aprovadinho, o chatbot da plataforma, e tire suas dúvidas sobre os principais vestibulares do Brasil.")
