@@ -11,7 +11,7 @@ st.set_page_config(
 st.markdown("""
     <meta property="og:title" content="Plataforma Aprova" />
     <meta property="og:description" content="Resumos, exercícios, redações nota máxima e muito mais para ENEM, Fuvest e Unicamp." />
-    <meta property="og:image" content="https://raw.githubusercontent.com/seu-usuario/seu-repo/main/imagem.png" />
+    <meta property="og:image" content="https://github.com/matheusaudibert/projeto-aprova/blob/main/assets/preview.png?raw=true" />
     <meta property="og:type" content="website" />
     <meta property="og:url" content="https://projeto-aprova.streamlit.app/" />
 """, unsafe_allow_html=True)
