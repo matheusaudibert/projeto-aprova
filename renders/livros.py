@@ -3,7 +3,7 @@ from core.generate_reads import a_visao_das_plantas, as_meninas, balada_de_amor_
 
 def render():
   st.markdown("<h1 style='color: #7144EE ;'>Leituras Obrigatórias</h1>", unsafe_allow_html=True)
-  st.text("Aqui você encontra todos os livros obrigatórios da Fuvest e da Unicamp, além de resumos e informações focadas nas provas. Ideal para revisar os conteúdos literários mais cobrados e se preparar com estratégia.")
+  st.text("Encontre os livros obrigatórios da Fuvest e Unicamp, além de resumos e informações focadas nas provas. Perfeito para revisar conteúdos literários essenciais e se preparar com estratégia.")
   
   st.divider()
   

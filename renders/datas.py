@@ -15,7 +15,7 @@ def gerar_link_google_agenda(titulo, descricao, local, data_inicio, data_fim):
 
 def render():
     st.markdown("<h1 style='color: #b0e1ff ;'>Datas Importantes</h1>", unsafe_allow_html=True)
-    st.text("Aqui estão as datas importantes para os vestibulares de 2025 e 2026. Fique atento às datas de inscrição, provas e resultados para não perder nenhuma oportunidade!")
+    st.text("Confira as datas importantes dos vestibulares 2025 e 2026. Fique atento aos prazos de inscrição, provas e divulgação dos resultados para não perder nenhuma oportunidade!")
     st.divider()
 
     # ENEM 2025

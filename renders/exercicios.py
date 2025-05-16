@@ -5,7 +5,7 @@ from core.generate_exercises import generate_exercises
 def render():
   st.markdown("<h1 style='color: #f26679;'>Gerador de Exercícios</h1>", unsafe_allow_html=True)
 
-  st.text("Aqui você pratica com exercícios focados nos temas que mais caem nos vestibulares. Escolha a área, a matéria e o assunto para testar seus conhecimentos de forma estratégica.")
+  st.text("Pratique com exercícios gerados por AI focados nos temas que mais caem nos vestibulares. Escolha a área, a matéria e o assunto para testar seus conhecimentos de forma estratégica.")
 
   if 'exercises' not in st.session_state:
       st.session_state.exercises = None

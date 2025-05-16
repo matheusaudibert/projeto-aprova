@@ -7,8 +7,7 @@ def render():
     st.markdown("<h1 style='color: #f26679;'>Gerador de Resumos</h1>", unsafe_allow_html=True)
 
 
-    st.text(
-        "Aqui você gera resumos diretos ao ponto sobre os temas que mais caem nos vestibulares. Uma forma rápida e eficiente de revisar os conteúdos mais importantes para os exames.")
+    st.text("Gere resumos diretos ao ponto sobre os temas que mais caem nos vestibulares. Uma forma rápida e eficiente de revisar os conteúdos mais importantes para os exames.")
 
     st.divider()
 

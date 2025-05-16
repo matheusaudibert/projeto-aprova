@@ -4,7 +4,7 @@ from constants.texts import redacoes_enem, redacoes_fuvest, redacoes_unicamp
 
 def render():
     st.markdown("<h1 style='color: #FFB530;'>Redações Nota Máxima</h1>", unsafe_allow_html=True)
-    st.text("Aqui você encontra redações que tiraram nota máxima nos principais vestibulares. Leia, analise e inspire-se com exemplos reais para aprimorar sua escrita e se preparar melhor para a prova.")
+    st.text("Encontre redações nota máxima dos principais vestibulares. Leia, analise e inspire-se com exemplos reais para aprimorar sua escrita e se preparar para a prova.")
     st.divider()
 
     vestibular = st.selectbox("Escolha o vestibular:", ["", "ENEM", "FUVEST", "UNICAMP"], index=0)
