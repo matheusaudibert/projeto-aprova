@@ -1,5 +1,5 @@
 import streamlit as st
-from renders import inicio, provas, resumos, exercicios, redacoes, livros, vestibulares, correcao, sidebar, datas
+from renders import inicio, provas, resumos, exercicios, redacoes, livros, vestibulares, correcao, sidebar, datas, canais
 
 st.set_page_config(
     page_title="Plataforma Aprova",
@@ -7,7 +7,7 @@ st.set_page_config(
     page_icon="assets/aprovadinho/aprovadinho_bot_round.png",
     layout="centered",
 )
-tab_inicio, tab_vestibulares, tab_resumos, tab_exercicios, tab_provas, tab_redacoes, tab_correcao, tab_livros, tab_datas = st.tabs(["Início", "Vestibulares", "Resumos", "Exercícios", "Provas", "Redações", "Correção", "Leituras Obrigatórias", "Datas"])
+tab_inicio, tab_vestibulares, tab_resumos, tab_exercicios, tab_provas, tab_redacoes, tab_correcao, tab_livros, tab_datas, tab_canais = st.tabs(["Início", "Vestibulares", "Resumos", "Exercícios", "Provas", "Redações", "Correção", "Leituras", "Datas", "Canais"])
 with st.sidebar:
   sidebar.render()
 
@@ -37,3 +37,6 @@ with tab_livros:
   
 with tab_datas:
   datas.render()
+  
+with tab_canais:
+  canais.render()

@@ -110,7 +110,7 @@ def render():
               <p style='font-size: 17px; color: white';>Saiba quais são os livros exigidos em cada vestibular e explore resumos completos, organizados e fáceis de entender para cada obra.</p>
       """, unsafe_allow_html=True)
       if st.button("Checar livros", use_container_width=True, key="livros_button", type="primary"):
-          switch_to_tab("Leituras Obrigatórias")
+          switch_to_tab("Leituras")
 
     with col2:
       with st.container(border=True):
@@ -174,9 +174,17 @@ def render():
     """, unsafe_allow_html=True)
 
     if st.button("Conferir canais", use_container_width=True, key="canais_button"):
-      st.switch_page("pages/aprovadinho.py")
+      switch_to_tab("Canais")
       
   st.divider()
+  st.write("")
+  
+  st.markdown("""
+    <div style='text-align: center; font-family: "Segoe UI Emoji", "Apple Color Emoji", "Noto Color Emoji", sans-serif;'>
+        Feito com carinho ❤ por Matheus Audibert!
+    </div>
+""", unsafe_allow_html=True)
+
   
   def read_html():
     with open("core/index.html") as f:
