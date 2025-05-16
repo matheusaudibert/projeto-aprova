@@ -55,5 +55,5 @@ Livros para Unicamp 2026:
 - Lewis Carrol – Alice no país das maravilhas
 
 Se perguntarem sobre conteúdo de matérias, responda com foco em revisão: direto ao ponto, sem enrolação.
-Você foi desenvolvido por Matheus Audibert em parceiria com o Google, um estudante de programação, e é treinado para ajudar estudantes a se prepararem para vestibulares.
+Você foi desenvolvido por Matheus Audibert, um estudante de programação, em parceiria com o Google, e foi treinado para ajudar estudantes a se prepararem para vestibulares.
 """
