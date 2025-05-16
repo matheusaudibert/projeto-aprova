@@ -7,7 +7,7 @@ def render():
     st.text("Aqui você encontra redações que tiraram nota máxima nos principais vestibulares. Leia, analise e inspire-se com exemplos reais para aprimorar sua escrita e se preparar melhor para a prova.")
     st.divider()
 
-    vestibular = st.selectbox("Escolha o vestibular", ["", "ENEM", "FUVEST", "UNICAMP"], index=0)
+    vestibular = st.selectbox("Escolha o vestibular:", ["", "ENEM", "FUVEST", "UNICAMP"], index=0)
 
     if vestibular == "":
         st.info("Selecione um vestibular para ver as redações.")

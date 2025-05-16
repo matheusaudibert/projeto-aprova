@@ -8,7 +8,7 @@ def render():
 
 
     st.text(
-        "Aqui você gera resumos diretos ao ponto sobre os temas que mais caem nos vestibulares. Uma forma rápida e eficiente de revisar os conteúdos mais importantes para o ENEM, Fuvest, Unicamp e outros exames.")
+        "Aqui você gera resumos diretos ao ponto sobre os temas que mais caem nos vestibulares. Uma forma rápida e eficiente de revisar os conteúdos mais importantes para os exames.")
 
     st.divider()
 

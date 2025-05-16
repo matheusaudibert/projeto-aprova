@@ -13,7 +13,7 @@ def render():
   unicamp = unicamp_tests
   
   option = st.selectbox(
-    "Escolha o tipo de simulado:",
+    "Escolha o vestibular:",
     ("","ENEM", "Fuvest (USP)", "Unicamp")
   )
   
@@ -30,10 +30,10 @@ def render():
                   st.markdown(f"### {dia}")
                   col1, col2 = st.columns(2)
                   with col1:
-                      if st.button(f"📄 Prova {dia}", key=f"{ano}_{dia}_prova", use_container_width=True, type="primary"):
+                      if st.button(f"Prova {dia}", key=f"{ano}_{dia}_prova", use_container_width=True, type="primary"):
                           webbrowser.open(prova)
                   with col2:
-                      if st.button(f"✅ Gabarito {dia}", key=f"{ano}_{dia}_gabarito", use_container_width=True, type="secondary"):
+                      if st.button(f"Gabarito {dia}", key=f"{ano}_{dia}_gabarito", use_container_width=True, type="secondary"):
                           webbrowser.open(gabarito)
 
   # Exibição condicional para Fuvest
@@ -46,24 +46,24 @@ def render():
               st.markdown("### Primeira Fase")
               col1, col2 = st.columns(2)
               with col1:
-                  if st.button("📄 Prova - Primeira Fase", key=f"{ano}_primeira_prova", use_container_width=True, type="primary"):
+                  if st.button("Prova - Primeira Fase", key=f"{ano}_primeira_prova", use_container_width=True, type="primary"):
                       webbrowser.open(fase1["Prova"])
               with col2:
-                  if st.button("✅ Gabarito - Primeira Fase", key=f"{ano}_primeira_gabarito", use_container_width=True, type="secondary"):
+                  if st.button("Gabarito - Primeira Fase", key=f"{ano}_primeira_gabarito", use_container_width=True, type="secondary"):
                       webbrowser.open(fase1["Gabarito"])
 
               st.markdown("### Segunda Fase")
               col1, col2 = st.columns(2)
               with col1:
-                  if st.button("📄 Dia 1 - Segunda Fase", key=f"{ano}_segunda_dia1", use_container_width=True, type="primary"):
+                  if st.button("Dia 1 - Segunda Fase", key=f"{ano}_segunda_dia1", use_container_width=True, type="primary"):
                       webbrowser.open(fase2["Dia 1"])
               with col2:
-                  if st.button("📄 Dia 2 - Segunda Fase", key=f"{ano}_segunda_dia2", use_container_width=True, type="primary"):
+                  if st.button("Dia 2 - Segunda Fase", key=f"{ano}_segunda_dia2", use_container_width=True, type="primary"):
                       webbrowser.open(fase2["Dia 2"])
 
               col = st.columns(1)[0]
               with col:
-                  if st.button("✅ Gabarito - Segunda Fase", key=f"{ano}_segunda_gabarito", use_container_width=True, type="secondary"):
+                  if st.button("Gabarito - Segunda Fase", key=f"{ano}_segunda_gabarito", use_container_width=True, type="secondary"):
                       webbrowser.open(fase2["Gabarito"])
 
     # Exibição condicional para Unicamp
@@ -76,27 +76,27 @@ def render():
               st.markdown("### Primeira Fase")
               col1, col2 = st.columns(2)
               with col1:
-                  if st.button("📄 Prova - Primeira Fase", key=f"{ano}_unicamp_primeira_prova", use_container_width=True, type="primary"):
+                  if st.button("Prova - Primeira Fase", key=f"{ano}_unicamp_primeira_prova", use_container_width=True, type="primary"):
                       webbrowser.open(fase1["Prova"])
               with col2:
-                  if st.button("✅ Gabarito - Primeira Fase", key=f"{ano}_unicamp_primeira_gabarito", use_container_width=True, type="secondary"):
+                  if st.button("Gabarito - Primeira Fase", key=f"{ano}_unicamp_primeira_gabarito", use_container_width=True, type="secondary"):
                       webbrowser.open(fase1["Gabarito"])
 
               st.markdown("### Segunda Fase - Dia 1")
               col1, col2 = st.columns(2)
               with col1:
-                  if st.button("📄 Prova - Dia 1", key=f"{ano}_unicamp_segunda_dia1_prova", use_container_width=True, type="primary"):
+                  if st.button("Prova - Dia 1", key=f"{ano}_unicamp_segunda_dia1_prova", use_container_width=True, type="primary"):
                       webbrowser.open(fase2["Dia 1"]["Prova"])
               with col2:
-                  if st.button("✅ Gabarito - Dia 1", key=f"{ano}_unicamp_segunda_dia1_gabarito", use_container_width=True, type="secondary"):
+                  if st.button("Gabarito - Dia 1", key=f"{ano}_unicamp_segunda_dia1_gabarito", use_container_width=True, type="secondary"):
                       webbrowser.open(fase2["Dia 1"]["Gabarito"])
 
               st.markdown("### Segunda Fase - Dia 2")
               for area in ["Biológicas", "Exatas", "Humanas"]:
                   col1, col2 = st.columns(2)
                   with col1:
-                      if st.button(f"📄 Prova - {area}", key=f"{ano}_unicamp_{area}_prova", use_container_width=True, type="primary"):
+                      if st.button(f"Prova - {area}", key=f"{ano}_unicamp_{area}_prova", use_container_width=True, type="primary"):
                           webbrowser.open(fase2["Dia 2"][area]["Prova"])
                   with col2:
-                      if st.button(f"✅ Gabarito - {area}", key=f"{ano}_unicamp_{area}_gabarito", use_container_width=True, type="secondary"):
+                      if st.button(f"Gabarito - {area}", key=f"{ano}_unicamp_{area}_gabarito", use_container_width=True, type="secondary"):
                           webbrowser.open(fase2["Dia 2"][area]["Gabarito"])

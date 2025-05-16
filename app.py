@@ -7,6 +7,16 @@ st.set_page_config(
     page_icon="assets/aprovadinho/aprovadinho_bot_round.png",
     layout="centered",
 )
+
+st.markdown("""
+    <meta property="og:title" content="Plataforma Aprova" />
+    <meta property="og:description" content="Resumos, exercícios, redações nota máxima e muito mais para ENEM, Fuvest e Unicamp." />
+    <meta property="og:image" content="https://raw.githubusercontent.com/seu-usuario/seu-repo/main/imagem.png" />
+    <meta property="og:type" content="website" />
+    <meta property="og:url" content="https://projeto-aprova.streamlit.app/" />
+""", unsafe_allow_html=True)
+
+
 tab_inicio, tab_vestibulares, tab_resumos, tab_exercicios, tab_provas, tab_redacoes, tab_correcao, tab_livros, tab_datas, tab_canais = st.tabs(["Início", "Vestibulares", "Resumos", "Exercícios", "Provas", "Redações", "Correção", "Leituras", "Datas", "Canais"])
 with st.sidebar:
   sidebar.render()

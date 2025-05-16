@@ -56,7 +56,7 @@ def render():
     # FUVEST 2026
     col_title, = st.columns(1)
     with col_title:
-        st.subheader(":green[FUVEST 2026]")
+        st.subheader(":green[FUVEST 2026 (USP)]")
     col1, col2, col3 = st.columns(3)
     with col1:
         with st.container(border=True):
