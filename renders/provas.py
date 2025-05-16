@@ -3,7 +3,7 @@ import webbrowser
 from constants.tests import enem_tests, fuvest_tests, unicamp_tests
 
 def render():
-  st.title("Simulados")
+  st.title("Provas")
   st.text("Use esta ferramenta para praticar seus conhecimentos com simulados focados. Basta escolher a área do conhecimento, a matéria e o tema desejado, e o gerador criará questões que ajudam a fixar o conteúdo mais cobrado no ENEM e nos principais vestibulares. Ideal para testar seu aprendizado e se preparar para as provas.")
   st.divider()
   

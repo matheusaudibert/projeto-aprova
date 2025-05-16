@@ -11,11 +11,13 @@ def switch_to_tab(tab_name):
         tabButtons.forEach(function(button) {{
             if (button.innerText.trim() === "{tab_name}") {{
                 button.click();
+                window.parent.scrollTo({{ top: 0, behavior: 'instant' }});
             }}
         }});
     </script>
     """
-    st.components.v1.html(js_code, height=0, width=0)
+    st.components.v1.html(js_code, height=0)
+
 
 def render():
 
@@ -113,7 +115,7 @@ def render():
     with col2:
       with st.container(border=True):
         st.markdown("""
-              <h3 style='font-size: 20px; color: #b0e1ff;'>Saiba as Datas importantes sem stress</h3>
+              <h3 style='font-size: 20px; color: #b0e1ff;'>Saiba as Datas importantes sem enrolação</h3>
               <p style='font-size: 17px; color: white';>Fique por dentro de todos os prazos dos principais vestibulares, inscrições, datas de prova, resultados e muito mais, tudo em um só lugar.</p>
       """, unsafe_allow_html=True)
       if st.button("Ver datas", use_container_width=True, key="datas_button", type="primary"):
@@ -134,8 +136,8 @@ def render():
             <p style='font-size: 17px; color: white;'>Fale com ele a qualquer hora. Ele está sempre pronto para te ajudar!</p>
     """, unsafe_allow_html=True)
 
-    if st.button("Falar com o Aprovadinho", use_container_width=True, key="aprovadinho_button", type="primary"):
-      switch_to_tab("Aprovadinho")
+    if st.button("Falar com o Aprovadinho", use_container_width=True, key="aprovadinho_button"):
+      st.switch_page("pages/aprovadinho.py")
       
   st.divider()
   
@@ -149,7 +151,7 @@ def render():
     st.markdown("""
     <h3 style='font-size: 20px; color: #f08671;'>Ainda não sabe qual carreira seguir?</h3>
     <p style='font-size: 17px; color: white;'>Tudo bem! A escolha da profissão nem sempre é fácil, e você não precisa decidir isso sozinho.</p>
-    <p style='font-size: 17px; color: white;'>Aqui na APROVA, você pode fazer um <strong>teste vocacional</strong> gratuito que te ajuda a descobrir quais áreas combinam mais com seus interesses, habilidades e valores.</p>
+    <p style='font-size: 17px; color: white;'>Aqui na APROVA, você pode fazer um <strong>teste vocacional (com IA)</strong> que te ajuda a descobrir quais áreas combinam mais com seus interesses, habilidades e valores.</p>
 """, unsafe_allow_html=True)
 
     if st.button("Fazer o teste", use_container_width=True, key="carreira_button", type="primary"):
