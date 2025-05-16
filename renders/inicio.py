@@ -156,6 +156,27 @@ def render():
 
     if st.button("Fazer o teste", use_container_width=True, key="teste_button", type="primary"):
       st.switch_page("pages/teste.py")
+      
+  st.divider()
+      
+  with st.container():
+    col1, col2 = st.columns([2, 1])
+
+  with col2: 
+    st.image("assets/aprovadinho/aprovadinho_5.png")
+
+  with col1:
+    st.markdown("""
+            <h3 style='font-size: 20px; color: #fc5353;'>Fique por dentro com os melhores canais</h3>
+            <p style='font-size: 17px; color: white;'>Estudar fica mais leve quando você aprende com quem sabe ensinar.</p>
+            <p style='font-size: 17px; color: white;'>Selecionamos alguns dos melhores canais no YouTube sobre conteúdos de vestibulares, atualidades, dicas e muito mais.</p>
+            <p style='font-size: 17px; color: white;'>Acompanhe, se inscreva e turbine seus estudos com vídeos de qualidade!</p>
+    """, unsafe_allow_html=True)
+
+    if st.button("Conferir canais", use_container_width=True, key="canais_button"):
+      st.switch_page("pages/aprovadinho.py")
+      
+  st.divider()
   
   def read_html():
     with open("core/index.html") as f:

@@ -4,14 +4,11 @@ from core.clear_summary import clear_summary
 from constants.subjects import subjects
 
 def render():
-    st.title("Gerador de Resumos")
+    st.markdown("<h1 style='color: #f26679;'>Gerador de Resumos</h1>", unsafe_allow_html=True)
+
 
     st.text(
-        "Use esta ferramenta para revisar conteúdos de forma rápida e eficiente. "
-        "Basta escolher a área do conhecimento, a matéria e o tema desejado, e o gerador "
-        "criará um resumo direto ao ponto, focado nos assuntos mais cobrados no ENEM e "
-        "nos principais vestibulares. Ideal para reforçar seus estudos ou revisar antes das provas."
-    )
+        "Aqui você gera resumos diretos ao ponto sobre os temas que mais caem nos vestibulares. Uma forma rápida e eficiente de revisar os conteúdos mais importantes para o ENEM, Fuvest, Unicamp e outros exames.")
 
     st.divider()
 

@@ -4,10 +4,9 @@ from renders import inicio, provas, resumos, exercicios, redacoes, livros, vesti
 st.set_page_config(
     page_title="Plataforma Aprova",
     initial_sidebar_state="expanded",
-    page_icon="assets/logo.png",
+    page_icon="assets/aprovadinho/aprovadinho_bot_round.png",
     layout="centered",
 )
-
 tab_inicio, tab_vestibulares, tab_resumos, tab_exercicios, tab_provas, tab_redacoes, tab_correcao, tab_livros, tab_datas = st.tabs(["Início", "Vestibulares", "Resumos", "Exercícios", "Provas", "Redações", "Correção", "Leituras Obrigatórias", "Datas"])
 with st.sidebar:
   sidebar.render()

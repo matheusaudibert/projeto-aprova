@@ -7,6 +7,13 @@ from dotenv import load_dotenv
 import base64
 from renders import sidebar
 
+st.set_page_config(
+    page_title="Aprovadinho Chat",
+    initial_sidebar_state="expanded",
+    page_icon="assets/aprovadinho/aprovadinho_bot_round.png",
+    layout="centered",
+)
+
 def base64_image(path):
     with open(path, "rb") as image_file:
         return base64.b64encode(image_file.read()).decode()
@@ -45,12 +52,11 @@ with st.sidebar:
 
 col1, col2 = st.columns([1, 7])
 with col2:
-    st.title("Converse com o Aprovadinho")
+    st.markdown("<h1 style='color: #60B4FF;'>Converse com o Aprovadinho</h1>", unsafe_allow_html=True)
 with col1:
     st.markdown("<div style='margin-top: 30px;'></div>", unsafe_allow_html=True)
-    if st.button("Voltar", use_container_width=True, key="voltar_button", type="primary"):
+    if st.button("Voltar", use_container_width=True, key="voitar_button", type="primary"):
         st.switch_page("app.py")
-        
 st.text("Use o Aprovadinho para tirar dúvidas rápidas e revisar os conteúdos essenciais do vestibular com respostas diretas e objetivas. Sua preparação mais eficiente começa aqui!")
 
 # Variável que armazenará o texto vindo dos botões
@@ -60,7 +66,7 @@ col1, col2, col3 = st.columns(3)
 
 with col1:
     if st.button("Dicas para o vestibular", use_container_width=True, key="1", type="secondary"):
-        user_input = "Mê de dicas para o vestibular."
+        user_input = "Me dê dicas para o vestibular."
         
 with col2:
     if st.button("Maiores notas de corte", use_container_width=True, key="2", type="secondary"):
@@ -68,7 +74,7 @@ with col2:
 
 with col3:
     if st.button("Aulas no youtube", use_container_width=True, key="3", type="secondary"):
-        user_input = "Me forneça os principais canais do youtube para estudar para o vestibular."
+        user_input = "Me forneça os principais canais do youtube para estudar para o vestibular."  
     
 load_dotenv()
 API_KEY = os.getenv('GEMINI_API_KEY')

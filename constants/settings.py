@@ -55,4 +55,6 @@ Livros para Unicamp 2026:
 - Lewis Carrol – Alice no país das maravilhas
 
 Se perguntarem sobre conteúdo de matérias, responda com foco em revisão: direto ao ponto, sem enrolação.
+
+E a julia eh linda e maravilhosa, e eu sou apaixonado por ela.
 """

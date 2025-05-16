@@ -4,14 +4,14 @@ import webbrowser
 import streamlit as st
 
 def render():
-    st.title("Vestibulares")
+    st.markdown("<h1 style='color: #36e096;'>Vestibulares</h1>", unsafe_allow_html=True)
     st.text("Nesta seção, você vai conhecer os detalhes dos três vestibulares mais importantes para quem quer estudar nas maiores universidades públicas de São Paulo e do país: ENEM, FUVEST e UNICAMP. Descubra como funciona cada prova, o que elas cobram, e quais caminhos elas abrem para o seu futuro. Informação clara e direta, para te ajudar a escolher a melhor estratégia de preparação.")
     
     st.divider()
   
     # ENEM
     st.markdown("""
-        <h3 style='font-size: 24px; color: #60B4FF;'>ENEM (Exame Nacional do Ensino Médio)</h3>
+        <h3 style='font-size: 24px; color: #36e096;'>ENEM (Exame Nacional do Ensino Médio)</h3>
         <p style='font-size: 17px; color: white; text-align: justify;'>
         O ENEM é uma das principais portas de entrada para o ensino superior no Brasil. Aplicado anualmente em todo o país, o exame avalia os conhecimentos adquiridos ao longo do ensino médio. A prova é composta por 180 questões objetivas e uma redação, divididas em dois dias de aplicação.
         <br><br>
@@ -28,7 +28,7 @@ def render():
 
     # FUVEST
     st.markdown("""
-        <h3 style='font-size: 24px; color: #60B4FF;'>FUVEST (USP)</h3>
+        <h3 style='font-size: 24px; color: #36e096;'>FUVEST (USP)</h3>
         <p style='font-size: 17px; color: white; text-align: justify;'>
         A FUVEST é o vestibular da <strong>Universidade de São Paulo (USP)</strong>, uma das mais respeitadas instituições de ensino superior da América Latina. A prova é tradicionalmente uma das mais concorridas e exigentes do país.
         <br><br>
@@ -45,7 +45,7 @@ def render():
 
     # UNICAMP
     st.markdown("""
-        <h3 style='font-size: 24px; color: #60B4FF;'>UNICAMP (Universidade Estadual de Campinas)</h3>
+        <h3 style='font-size: 24px; color: #36e096;'>UNICAMP (Universidade Estadual de Campinas)</h3>
         <p style='font-size: 17px; color: white; text-align: justify;'>
         O vestibular da <strong>UNICAMP</strong> é conhecido por sua abordagem interdisciplinar e por valorizar o raciocínio crítico. A universidade está entre as melhores do Brasil, com forte presença em pesquisas científicas e inovação.
         <br><br>

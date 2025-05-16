@@ -3,9 +3,9 @@ from constants.subjects import subjects
 from core.generate_exercises import generate_exercises
 
 def render():
-  st.title("Gerador de Exercícios")
+  st.markdown("<h1 style='color: #f26679;'>Gerador de Exercícios</h1>", unsafe_allow_html=True)
 
-  st.text("Use esta ferramenta para praticar seus conhecimentos com exercícios focados. Basta escolher a área do conhecimento, a matéria e o tema desejado, e o gerador criará questões que ajudam a fixar o conteúdo mais cobrado no ENEM e nos principais vestibulares. Ideal para testar seu aprendizado e se preparar para as provas.")
+  st.text("Aqui você pratica com exercícios focados nos temas que mais caem no ENEM e nos principais vestibulares. Escolha a área, a matéria e o assunto para testar seus conhecimentos de forma estratégica.")
 
   if 'exercises' not in st.session_state:
       st.session_state.exercises = None

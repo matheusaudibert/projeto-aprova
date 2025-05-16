@@ -4,7 +4,7 @@ import streamlit as st
 from core.genetare_correction import generate_correction, verificar_sentido_redacao_com_arquivo, formatar_resultado
 
 def render():
-    st.title("Correção de Redações")
+    st.markdown("<h1 style='color:  #d39eff;'>Correção de Redação</h1>", unsafe_allow_html=True)
     st.markdown("Escolha se deseja digitar a redação ou enviar um arquivo. Depois, selecione a vestibular, o tema e receba uma correção detalhada.")
     st.markdown("#### Como funciona a correção da redação de cada vestibular?")
     st.markdown("[Correção Enem](https://www.cnnbrasil.com.br/educacao/redacao-do-enem-perguntas-e-respostas-sobre-a-correcao/), [Correção Fuvest (USP)](https://www.cnnbrasil.com.br/educacao/redacao-da-fuvest-2025-saiba-como-e-feita-a-correcao/), [Correção Unicamp](https://querobolsa.com.br/revista/como-e-a-correcao-da-redacao-da-unicamp)", unsafe_allow_html=True)

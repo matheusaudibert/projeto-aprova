@@ -2,8 +2,8 @@ import streamlit as st
 from core.generate_reads import a_visao_das_plantas, as_meninas, balada_de_amor_ao_vento, caminho_de_pedras, cancao_para_ninar_menino_grande, memorias_de_martha, nebulosas, o_cristo_cigano, opusculo_humanitario, a_vida_nao_e_util, alice_no_pais_das_maravilhas, cancoes_escolhidas, casa_velha, morangos_mofados, no_seu_pescoco, olhos_d_agua, prosas_seguidas_de_odes_minimas, vida_e_morte_de_m_j_gonzaga_de_sa
 
 def render():
-  st.title("Leituras Obrigatórias")  
-  st.text("Use esta ferramenta para praticar seus conhecimentos com simulados focados. Basta escolher a área do conhecimento, a matéria e o tema desejado, e o gerador criará questões que ajudam a fixar o conteúdo mais cobrado no ENEM e nos principais vestibulares. Ideal para testar seu aprendizado e se preparar para as provas.")
+  st.markdown("<h1 style='color: #7144EE ;'>Leituras Obrigatórias</h1>", unsafe_allow_html=True)
+  st.text("Aqui você encontra todos os livros obrigatórios da Fuvest e da Unicamp, além de resumos e informações focadas nas provas. Ideal para revisar os conteúdos literários mais cobrados e se preparar com estratégia.")
   
   st.divider()
   
@@ -11,7 +11,7 @@ def render():
   
   with col1:
     with st.container(border=False):
-      st.markdown("##### Selecione o livro da Fuvest")
+      st.markdown("##### Selecione o livro da Fuvest 2026")
       
       if st.button("A Visão das Plantas", key="a_visao_das_plantas", use_container_width=True, type="primary"):
         with col2:
@@ -46,7 +46,7 @@ def render():
   
   with col1:
      with st.container(border=False):
-      st.markdown("##### Selecione o livro da Unicamp")
+      st.markdown("##### Selecione o livro da Unicamp 2026")
       if st.button("A vida não é útil", key="a_vida_nao_e_util", use_container_width=True, type="primary"):
         with col2:
           a_vida_nao_e_util()
