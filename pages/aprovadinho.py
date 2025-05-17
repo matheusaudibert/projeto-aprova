@@ -97,7 +97,7 @@ with col1:
     st.markdown("<div style='margin-top: 30px;'></div>", unsafe_allow_html=True)
     if st.button("Voltar", use_container_width=True, key="voitar_button", type="primary"):
         st.switch_page("app.py")
-st.text("Use o Aprovadinho para tirar dúvidas rápidas e revisar os conteúdos essenciais do vestibular com respostas diretas e objetivas. Sua preparação mais eficiente começa aqui!")
+st.markdown("Use o **Aprovadinho** para **tirar dúvidas rápidas** e **revisar os conteúdos** essenciais do vestibular com respostas diretas e objetivas. **Sua preparação mais eficiente começa aqui!**")
 
 # Variável que armazenará o texto vindo dos botões
 user_input = None

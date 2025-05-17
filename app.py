@@ -127,7 +127,7 @@ st_theme_changer(themes_data=theme_data, render_mode="pills", rerun_whole_st=Tru
 
 
 
-tab_inicio, tab_vestibulares, tab_resumos, tab_exercicios, tab_provas, tab_redacoes, tab_correcao, tab_livros, tab_datas, tab_canais = st.tabs(["Início", "Vestibulares", "Resumos", "Exercícios", "Provas", "Redações", "Correção", "Leituras", "Datas", "Canais"])
+tab_inicio, tab_vestibulares, tab_resumos, tab_exercicios, tab_provas, tab_redacoes, tab_correcao, tab_livros, tab_datas, tab_canais = st.tabs(["Início", "Vestibulares", "Resumos", "Exercícios", "Provas", "Redações", "Correção", "Leituras Obrigatórias", "Datas", "Canais"])
 
 
 with tab_inicio:

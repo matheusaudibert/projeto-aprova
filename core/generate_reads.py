@@ -4,24 +4,10 @@ def a_visao_das_plantas():
     st.image("assets/livros/a_visao_das_plantas.jpg", width=200)
     st.markdown("""
     <p style='font-size: 24px; font-weight: bold;'>A Visão das Plantas</p>
-<p style='font-size: 20px; font-weight: bold;'>
-        Autor: <span style='font-weight: normal; font-size: 17px;'>Djaimilia Pereira de Almeida</span>
-    </p>
-<p style='font-size: 20px; font-weight: bold;'>
-        Movimento literário: <span style='font-weight: normal;  font-size: 17px;'>Pós-modernismo (romance angolano/português contemporâneo)</span>
-    </p>
-<p style='font-size: 20px; font-weight: bold;'>
-        Autora: <span style='font-weight: normal;  font-size: 17px;'>
-            Djaimilia Pereira de Almeida (1982) nasceu em Luanda (Angola) e cresceu em Lisboa (Portugal).
-            Licenciada em Estudos Portugueses pela Universidade Nova de Lisboa, é mestre pelo Centro de Literatura Portuguesa da Universidade de Coimbra
-            e doutora em Teoria da Literatura pelo Programa em Teoria da Literatura da Universidade de Lisboa.
-        </span>
-    </p>
-
-    <p style='font-size: 17px; '>
-        Lançou seu primeiro romance em 2015 (<em>Esse Cabelo</em>) e é uma das principais representantes da literatura que aborda questões de raça, gênero e identidade.
-        Djaimilia é professora da New York University.
-    </p>
+    <p style='font-size: 20px; font-weight: bold;'>Autor: <span style='font-weight: normal; font-size: 17px;'>Djaimilia Pereira de Almeida</span></p>
+    <p style='font-size: 20px; font-weight: bold;'>Movimento literário: <span style='font-weight: normal;  font-size: 17px;'>Pós-modernismo (romance angolano/português contemporâneo)</span></p>
+    <p style='font-size: 20px; font-weight: bold;'>Autora: <span style='font-weight: normal; font-size: 17px;'>Djaimilia Pereira de Almeida (1982) nasceu em Luanda (Angola) e cresceu em Lisboa (Portugal). Licenciada em Estudos Portugueses pela Universidade Nova de Lisboa, é mestre pelo Centro de Literatura Portuguesa da Universidade de Coimbra e doutora em Teoria da Literatura pelo Programa em Teoria da Literatura da Universidade de Lisboa.</span></p><p style='font-size: 17px;'>Lançou seu primeiro romance em 2015 (<em>Esse Cabelo</em>) e é uma das principais representantes da literatura que aborda questões de raça, gênero e identidade. Djaimilia é professora da New York University.</p>
+    
 <p style='font-size: 20px; font-weight: bold;'>
         Estilo: <span style='font-weight: normal;  font-size: 17px;'>
             Introspectivo e poético, o romance combina uma linguagem lírica com reflexões filosóficas,

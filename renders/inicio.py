@@ -110,7 +110,7 @@ def render():
               <p style='font-size: 17px;'>Saiba quais são os livros exigidos em cada vestibular e explore resumos completos, organizados e fáceis de entender para cada obra.</p>
       """, unsafe_allow_html=True)
       if st.button("Checar livros", use_container_width=True, key="livros_button"):
-          switch_to_tab("Leituras")
+          switch_to_tab("Leituras Obrigatórias")
 
     with col2:
       with st.container(border=True):
