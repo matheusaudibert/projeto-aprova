@@ -16,7 +16,7 @@
 
 # 🎓 Plataforma Aprova
 
-Uma **plataforma completa** e **inovador** desenvolvida para apoiar estudantes na preparação eficiente e direcionada para os principais vestibulares de São Paulo. Utilizando o poder da **Inteligência Artificial** por meio do **Google Gemini**, oferecemos conteúdos personalizados, recursos interativos e ferramentas inteligentes que tornam o estudo mais produtivo e focado nos seus objetivos acadêmicos.
+Uma [**plataforma completa**](https://projeto-aprova.streamlit.app) e **inovador** desenvolvida para apoiar estudantes na preparação eficiente e direcionada para os principais vestibulares de São Paulo. Utilizando o poder da **Inteligência Artificial** por meio do **Google Gemini**, oferecemos conteúdos personalizados, recursos interativos e ferramentas inteligentes que tornam o estudo mais produtivo e focado nos seus objetivos acadêmicos.
 
 ![Preview](assets/preview.png)
 
