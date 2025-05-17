@@ -18,8 +18,6 @@ def switch_to_tab(tab_name):
     """
     st.components.v1.html(js_code, height=0)
     
-    color = "#000000"
-
 
 def render():
 
@@ -35,7 +33,7 @@ def render():
 </p>
     """, unsafe_allow_html=True)
 
-  if st.button("Conhecer os vestibulares", use_container_width=True, key="vestibulares_button", type="primary"):
+  if st.button("Conhecer os vestibulares", use_container_width=True, key="vestibulares_button"):
         switch_to_tab("Vestibulares")
   
   st.divider()
@@ -55,10 +53,10 @@ def render():
     """, unsafe_allow_html=True)
     col1, col2 = st.columns([1, 1])
     with col1:
-      if st.button("Gerar resumos", use_container_width=True, key="resumos_button", type="primary"):
+      if st.button("Gerar resumos", use_container_width=True, key="resumos_button"):
         switch_to_tab("Resumos")
     with col2:
-      if st.button("Praticar", use_container_width=True, key="exercicios_button", type="primary"):
+      if st.button("Praticar", use_container_width=True, key="exercicios_button"):
         switch_to_tab("Exercícios")
 
   st.divider()
@@ -74,7 +72,7 @@ def render():
                 <p style='font-size: 17px;'>Escolha o ano, a prova e comece a responder. É uma forma eficiente de revisar conteúdos e identificar seus pontos fortes e fracos.</p>
                 <p style='font-size: 17px;'>Cada prova vem acompanhada de sua resolução comentada, baseadas nos critérios das vestibulars, para você aprender com os erros e evoluir a cada tentativa.</p>
         """, unsafe_allow_html=True)
-          if st.button("Acessar provas", use_container_width=True, key="provas_button", type="primary"):
+          if st.button("Acessar provas", use_container_width=True, key="provas_button"):
               switch_to_tab("Provas")
 
     st.divider()
@@ -87,10 +85,10 @@ def render():
     with col1:
       with st.container(border=True):
           st.markdown("""
-                  <h3 style='font-size: 20px; color: #FFB530;'>Leia as Redações mais exemplares</h3>
+                  <h3 style='font-size: 20px; color: #FFB530;'>Leia as Redações mais exemplares dos vestibulares</h3>
                   <p style='font-size: 17px;'>Veja exemplos reais de redações que alcançaram a nota máxima no Enem, Fuvest e Unicamp. Analise o que fez cada texto se destacar e entenda como aplicar essas estratégias na sua própria escrita.</p>
           """, unsafe_allow_html=True)
-      if st.button("Ler textos", use_container_width=True, key="redacoes_button", type="primary"):
+      if st.button("Ler textos", use_container_width=True, key="redacoes_button"):
           switch_to_tab("Redações")
 
     with col2:
@@ -99,7 +97,7 @@ def render():
               <h3 style='font-size: 20px; color: #d39eff;'>Correção personalizada de redações</h3>
               <p style='font-size: 17px;'>Envie sua redação, escolha o vestibular e receba uma correção detalhada feita por Inteligência Artificial. A avaliação segue fielmente os critérios oficiais de cada vestibular.</p>
       """, unsafe_allow_html=True)
-      if st.button("Corrigir texto", use_container_width=True, key="corracao_button", type="primary"):
+      if st.button("Corrigir texto", use_container_width=True, key="corracao_button"):
           switch_to_tab("Correção")
 
   with st.container():
@@ -108,19 +106,19 @@ def render():
     with col1:
       with st.container(border=True):
         st.markdown("""
-              <h3 style='font-size: 20px; color: #7144EE;'>Leitura obrigatória sem sofrimento</h3>
-              <p style='font-size: 17px;>Saiba quais são os livros exigidos em cada vestibular e explore resumos completos, organizados e fáceis de entender para cada obra.</p>
+              <h3 style='font-size: 20px; color: #7144EE;'>Leituras obrigatórias sem sofrimento</h3>
+              <p style='font-size: 17px;'>Saiba quais são os livros exigidos em cada vestibular e explore resumos completos, organizados e fáceis de entender para cada obra.</p>
       """, unsafe_allow_html=True)
-      if st.button("Checar livros", use_container_width=True, key="livros_button", type="primary"):
+      if st.button("Checar livros", use_container_width=True, key="livros_button"):
           switch_to_tab("Leituras")
 
     with col2:
       with st.container(border=True):
         st.markdown("""
               <h3 style='font-size: 20px; color: #b0e1ff;'>Saiba as Datas importantes sem enrolação</h3>
-              <p style='font-size: 17px;>Fique por dentro de todos os prazos dos principais vestibulares, inscrições, datas de prova, resultados e muito mais, tudo em um só lugar.</p>
+              <p style='font-size: 17px;'>Fique por dentro de todos os prazos dos principais vestibulares, inscrições, datas de prova, resultados e muito mais, tudo em um só lugar.</p>
       """, unsafe_allow_html=True)
-      if st.button("Ver datas", use_container_width=True, key="datas_button", type="primary"):
+      if st.button("Ver datas", use_container_width=True, key="datas_button"):
           switch_to_tab("Datas")
 
   st.divider()
@@ -157,7 +155,7 @@ def render():
     <p style='font-size: 17px;'>Aqui na APROVA, você pode fazer um <strong>teste vocacional (com IA)</strong> que te ajuda a descobrir quais áreas combinam mais com seus interesses, habilidades e valores.</p>
 """, unsafe_allow_html=True)
 
-    if st.button("Fazer o teste", use_container_width=True, key="teste_button", type="primary"):
+    if st.button("Fazer o teste", use_container_width=True, key="teste_button"):
       st.switch_page("pages/teste.py")
       
   st.divider()

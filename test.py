@@ -1,15 +1,6 @@
 import streamlit as st
-from renders import inicio, provas, resumos, exercicios, redacoes, livros, vestibulares, correcao, sidebar, datas, canais
 from streamlit_plugins.components.theme_changer import st_theme_changer
-from streamlit_plugins.components.theme_changer.entity import ThemeInfo, ThemeInput, ThemeBaseLight
-
-# st.set_page_config(
-#     page_title="Plataforma Aprova",
-#     initial_sidebar_state="expanded",
-#     page_icon="assets/aprovadinho/aprovadinho_bot_round.png",
-#     layout="centered",
-# )
-
+from streamlit_plugins.components.theme_changer.entity import ThemeInfo, ThemeInput, ThemeBaseLight, ThemeBaseDark
 theme_data = dict(
     light_day=ThemeInput(
         name="Light Day",
@@ -21,6 +12,8 @@ theme_data = dict(
             backgroundColor="#ffffff",
             secondaryBackgroundColor="#e8e8e8",
             textColor="#000000",
+            bodyFont=ThemeBaseLight.bodyFont,
+            codeFont=ThemeBaseLight.codeFont,
             fontFaces=ThemeBaseLight.fontFaces,
         )
     ),
@@ -34,6 +27,7 @@ theme_data = dict(
             backgroundColor="#000000",
             secondaryBackgroundColor="##1e1e1e",
             textColor="#ffffff",
+
             fontFaces=ThemeBaseLight.fontFaces,
         )
     ),
@@ -53,39 +47,7 @@ theme_data = dict(
 )
 
 with st.sidebar:
-  sidebar.render()
-  
-st_theme_changer(themes_data=theme_data, render_mode="pills", key="secondary_pills")
-
-tab_inicio, tab_vestibulares, tab_resumos, tab_exercicios, tab_provas, tab_redacoes, tab_correcao, tab_livros, tab_datas, tab_canais = st.tabs(["Início", "Vestibulares", "Resumos", "Exercícios", "Provas", "Redações", "Correção", "Leituras", "Datas", "Canais"])
-
-
-with tab_inicio:
-  inicio.render()
-  
-with tab_vestibulares:
-  vestibulares.render()
-  
-with tab_resumos:
-  resumos.render()
-  
-with tab_exercicios:
-  exercicios.render()
-  
-with tab_provas:
-  provas.render()
-  
-with tab_redacoes:
-  redacoes.render()
-  
-with tab_correcao:
-  correcao.render()
-  
-with tab_livros:
-  livros.render()
-  
-with tab_datas:
-  datas.render()
-  
-with tab_canais:
-  canais.render()
+    st_theme_changer(
+        themes_data=theme_data, render_mode="pills",
+        rerun_whole_st=True, key="secondary_pills"
+    )
