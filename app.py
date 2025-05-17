@@ -3,13 +3,12 @@ from renders import inicio, provas, resumos, exercicios, redacoes, livros, vesti
 from streamlit_plugins.components.theme_changer import st_theme_changer
 from streamlit_plugins.components.theme_changer.entity import ThemeInfo, ThemeInput, ThemeBaseLight
 
-# st.set_page_config(
-#     page_title="Plataforma Aprova",
-#     initial_sidebar_state="expanded",
-#     page_icon="assets/aprovadinho/aprovadinho_bot_round.png",
-#     layout="centered",
-# )
-
+st.set_page_config(
+    page_title="Prataforma Aprova",
+    initial_sidebar_state="expanded",
+    page_icon="assets/aprovadinho/aprovadinho_bot_round.png",
+    layout="centered",
+)
 def render():
   
   st.markdown("""

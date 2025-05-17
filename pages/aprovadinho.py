@@ -5,14 +5,13 @@ import google.generativeai as genai
 from constants.settings import system_instruction
 from dotenv import load_dotenv
 import base64
-from renders import sidebar
 
-# st.set_page_config(
-#     page_title="Aprovadinho Chat",
-#     initial_sidebar_state="expanded",
-#     page_icon="assets/aprovadinho/aprovadinho_bot_round.png",
-#     layout="centered",
-# )
+st.set_page_config(
+    page_title="Aprovadinho Chat",
+    initial_sidebar_state="expanded",
+    page_icon="assets/aprovadinho/aprovadinho_bot_round.png",
+    layout="centered",
+)
 
 def base64_image(path):
     with open(path, "rb") as image_file:
