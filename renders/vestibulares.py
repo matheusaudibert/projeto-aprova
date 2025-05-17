@@ -12,7 +12,7 @@ def render():
     # ENEM
     st.markdown("""
         <h3 style='font-size: 24px; color: #36e096;'>ENEM (Exame Nacional do Ensino Médio)</h3>
-        <p style='font-size: 17px; color: white; text-align: justify;'>
+        <p style='font-size: 17px; text-align: justify;'>
         O ENEM é uma das principais portas de entrada para o ensino superior no Brasil. Aplicado anualmente em todo o país, o exame avalia os conhecimentos adquiridos ao longo do ensino médio. A prova é composta por 180 questões objetivas e uma redação, divididas em dois dias de aplicação.
         <br><br>
         As quatro áreas de conhecimento cobradas são: Linguagens, Códigos e suas Tecnologias; Ciências Humanas; Ciências da Natureza; e Matemática. A redação exige que o aluno desenvolva um texto dissertativo-argumentativo com base em uma situação-problema.
@@ -29,7 +29,7 @@ def render():
     # FUVEST
     st.markdown("""
         <h3 style='font-size: 24px; color: #36e096;'>FUVEST (USP)</h3>
-        <p style='font-size: 17px; color: white; text-align: justify;'>
+        <p style='font-size: 17px;  text-align: justify;'>
         A FUVEST é o vestibular da <strong>Universidade de São Paulo (USP)</strong>, uma das mais respeitadas instituições de ensino superior da América Latina. A prova é tradicionalmente uma das mais concorridas e exigentes do país.
         <br><br>
         O processo seletivo ocorre em duas fases: a <strong>primeira fase</strong> é composta por 90 questões objetivas de múltipla escolha envolvendo todas as disciplinas do ensino médio. Já a <strong>segunda fase</strong> é dissertativa, com questões específicas de acordo com a carreira escolhida, além de uma redação obrigatória.
@@ -46,7 +46,7 @@ def render():
     # UNICAMP
     st.markdown("""
         <h3 style='font-size: 24px; color: #36e096;'>UNICAMP (Universidade Estadual de Campinas)</h3>
-        <p style='font-size: 17px; color: white; text-align: justify;'>
+        <p style='font-size: 17px;  text-align: justify;'>
         O vestibular da <strong>UNICAMP</strong> é conhecido por sua abordagem interdisciplinar e por valorizar o raciocínio crítico. A universidade está entre as melhores do Brasil, com forte presença em pesquisas científicas e inovação.
         <br><br>
         A prova também ocorre em duas fases: a <strong>primeira fase</strong> possui questões objetivas de múltipla escolha que envolvem múltiplas áreas do conhecimento. A <strong>segunda fase</strong> traz questões dissertativas e inclui uma redação. Algumas carreiras exigem provas específicas (como habilidades para artes cênicas e música).
