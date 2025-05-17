@@ -1,5 +1,7 @@
 <div align="center">
-  <img src="assets/aprovadinho/aprovadinho_bot_round.png" alt="Aprovadinho Logo" width="150px"/>
+  <a href="https://projeto-aprova.streamlit.app">
+    <img src="assets/aprovadinho/aprovadinho_bot_round.png" alt="Aprovadinho Logo" width="150px"/>
+  </a>
 </div>
 <br>
 <p align="center">
