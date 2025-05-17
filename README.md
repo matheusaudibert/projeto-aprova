@@ -3,9 +3,6 @@
 </div>
 
 <p align="center">
-  <a href="https://github.com/matheusaudibert/projeto-aprova/graphs/contributors">
-    <img src="https://img.shields.io/github/contributors/matheusaudibert/interif?color=60B4FF&logo=github&style=flat-square" alt="GitHub Contributors">
-  </a>
   <a href="https://github.com/matheusaudibert/projeto-aprova/stargazers">
     <img src="https://img.shields.io/github/stars/matheusaudibert/projeto-aprova?color=60B4FF&logo=github&style=flat-square" alt="GitHub Stars">
   </a>
