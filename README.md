@@ -17,7 +17,14 @@ Uma plataforma completa para ajudar estudantes na preparação para os principai
 
 ![Preview](assets/preview.png)
 
-## Tabela de conteúdos
+## 🧧 Tabela de conteúdos
+
+- [🤖 Aprovadinho](#🤖-aprovadinho)
+- [🧠 Teste Vocacional](#🧠-teste-vocacional)
+- [🔧 Funcionalidades](#🔧-funcionalidades)
+- [🤔 Contexto do projeto](#🤔-contexo-do-projeto)
+- [😸 Contribuições](#😸-contribuições)
+- [🎈 Curiosidade](#🎈-curiosidade)
 
 ## 🤖 Aprovadinho
 
