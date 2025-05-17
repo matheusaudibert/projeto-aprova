@@ -4,7 +4,7 @@ import streamlit.components.v1 as components
 st.set_page_config(
     page_title="Teste Vocacional",
     initial_sidebar_state="expanded",
-    page_icon="assets/aprovadinho/aprovadinho_bot_round.png",
+    page_icon="🧠",
     layout="centered",
 )
 

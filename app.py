@@ -6,7 +6,7 @@ from streamlit_plugins.components.theme_changer.entity import ThemeInfo, ThemeIn
 st.set_page_config(
     page_title="Prataforma Aprova",
     initial_sidebar_state="expanded",
-    page_icon="assets/aprovadinho/aprovadinho_bot_round.png",
+    page_icon="🎓",
     layout="centered",
 )
 def render():

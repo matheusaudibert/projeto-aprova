@@ -9,7 +9,7 @@ import base64
 st.set_page_config(
     page_title="Aprovadinho Chat",
     initial_sidebar_state="expanded",
-    page_icon="assets/aprovadinho/aprovadinho_bot_round.png",
+    page_icon="🤖",
     layout="centered",
 )
 
