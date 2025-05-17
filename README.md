@@ -40,7 +40,7 @@ O **Aprovadinho** é um **chatbot inteligente** criado para te acompanhar em cad
 
 Descubra quais áreas combinam com você e quais cursos mais se alinham com seus interesses, talentos e estilo de vida. Com o nosso teste vocacional, você encontra **clareza para tomar decisões mais seguras sobre seu futuro acadêmico e profissional**. É rápido, prático e pode te ajudar a enxergar caminhos que você talvez ainda não tenha considerado.
 
-_Obs: Em produção..._
+![Teste](assets/teste.png)
 
 ## 🔧 Funcionalidades
 
