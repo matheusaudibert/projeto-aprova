@@ -11,7 +11,7 @@ def render():
 
     if vestibular == "":
         st.info("Selecione um vestibular para ver as redações.")
-        return  # ou apenas não mostrar nada
+        return 
     elif vestibular == "ENEM":
         redacoes = redacoes_enem
     elif vestibular == "FUVEST":
@@ -28,5 +28,4 @@ def render():
         with col2:
             st.markdown(f"**{ano}**")
             st.markdown(f"**Tema:** {dados['tema']}")
-            if st.button(f"Ler online", key=f"ler_redacao_{ano}", use_container_width=True, type="primary"):
-                webbrowser.open(dados["link"])
+            st.link_button("Ler online", f"{dados['link']}", use_container_width=True, type="primary")

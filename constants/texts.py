@@ -40,6 +40,11 @@ redacoes_fuvest = {
 }
 
 redacoes_unicamp = {
+  "Unicamp 2023 (Livro Pago)": {
+    "tema": "Racismo no ambiente escolar **ou** Regulamentação do porte de armas",
+    "image": "assets/outros/unicamp2023.jpg",
+    "link": "https://editoraunicamp.com.br/catalogo/?id=1828"
+  },
   "Unicamp 2022": {
     "tema": "Exposição das crianças na internet **ou** Cortes na verba para a ciência",
     "image": "assets/outros/unicamp2022.png",
