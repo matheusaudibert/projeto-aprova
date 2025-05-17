@@ -7,12 +7,12 @@ from dotenv import load_dotenv
 import base64
 from renders import sidebar
 
-st.set_page_config(
-    page_title="Aprovadinho Chat",
-    initial_sidebar_state="expanded",
-    page_icon="assets/aprovadinho/aprovadinho_bot_round.png",
-    layout="centered",
-)
+# st.set_page_config(
+#     page_title="Aprovadinho Chat",
+#     initial_sidebar_state="expanded",
+#     page_icon="assets/aprovadinho/aprovadinho_bot_round.png",
+#     layout="centered",
+# )
 
 def base64_image(path):
     with open(path, "rb") as image_file:
@@ -22,6 +22,7 @@ def display_message(text, sender):
     if sender == "user":
         avatar = "assets/aprovadinho/aprovadinho_user.png"
         color = "#ffffff" 
+        name_color = "#995EA9"  # verde
         name = "Você"
         align = "flex-end"
         text_align = "right"
@@ -29,6 +30,7 @@ def display_message(text, sender):
     else:
         avatar = "assets/aprovadinho/aprovadinho_bot.png"
         color = "#ffffff"
+        name_color = "#60B4FF"  # amarelo
         name = "Aprovadinho"
         align = "flex-start"
         text_align = "left"
@@ -39,16 +41,55 @@ def display_message(text, sender):
         <div style="display: flex; align-items: flex-start; flex-direction: row; max-width: 80%; {'flex-direction: row-reverse;' if sender == 'user' else ''}">
             <img src="data:image/png;base64,{base64_image(avatar)}" width="40" style="margin: 0 10px; border-radius: 50%;" />
             <div>
-                <strong style="display:block; text-align: {text_align}; color: {color};">{name}</strong>
+                <strong style="display:block; text-align: {text_align}; color: {name_color};">{name}</strong>
                 <div style="background: {bg_color}; padding: 10px 14px; border-radius: 10px; text-align: {text_align}; color: {color};">{text}</div>
             </div>
         </div>
     </div>
     """, unsafe_allow_html=True)
 
-
 with st.sidebar:
-    sidebar.render()
+    
+    st.markdown("""
+    <style>
+        .st-emotion-cache-j7qwjs.e1c29vlm3 {
+            display: none;
+        }
+        
+        .st-emotion-cache-vz9k5h.e1c29vlm19 {
+            display: none;
+        }
+        
+        .st-emotion-cache-1s1exd7.e1c29vlm19 {
+            display: none;
+        }
+        
+        .st-emotion-cache-14lrqrc.e1c29vlm19 {
+            display: none;
+        }
+        
+        .st-emotion-cache-1tuwfdi.e1c29vlm19 {
+            display: none;
+        }
+    </style>
+""", unsafe_allow_html=True)
+    
+    st.markdown("# 🎓 Aprova")  
+    st.markdown("*Este projeto foi desenvolvido durante a **Imersão IA** da **:blue[Alura]** em parceria com o **:blue[G]:red[o]:orange[o]:blue[g]:green[l]:red[e] :violet[Gemini]***.")
+  
+    st.markdown("# 🎈 Extras") 
+    st.text("Conheça o Aprovadinho, o chatbot da plataforma, e tire suas dúvidas sobre os principais vestibulares do Brasil.")
+    if st.button("Aprovadinho", use_container_width=True, key="aprovadinho_sidebar_2_button"):
+        st.switch_page("pages/aprovadinho.py")
+        
+    st.write("")
+        
+    st.text("Faça o teste vocacional agora e descubra qual carreira combina mais com você.")
+    if st.button("Teste vocacional", use_container_width=True, key="teste_sidebar_2_button"):
+        st.switch_page("pages/teste.py")
+        
+    st.write("")
+    st.markdown("😼 GitHub do projeto [aqui](https://github.com/matheusaudibert/projeto-aprova)!")
 
 col1, col2 = st.columns([1, 7])
 with col2:

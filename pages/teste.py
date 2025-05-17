@@ -1,16 +1,48 @@
 import streamlit as st
-from renders import sidebar
 import streamlit.components.v1 as components
 
-st.set_page_config(
-    page_title="Teste vocacional",
-    initial_sidebar_state="expanded",
-    page_icon="assets/aprovadinho/aprovadinho_bot_round.png",
-    layout="centered",
-)
-
 with st.sidebar:
-    sidebar.render()
+    
+    st.markdown("""
+    <style>
+        .st-emotion-cache-j7qwjs.e1c29vlm3 {
+            display: none;
+        }
+        
+        .st-emotion-cache-vz9k5h.e1c29vlm19 {
+            display: none;
+        }
+        
+        .st-emotion-cache-1s1exd7.e1c29vlm19 {
+            display: none;
+        }
+        
+        .st-emotion-cache-14lrqrc.e1c29vlm19 {
+            display: none;
+        }
+        
+        .st-emotion-cache-1tuwfdi.e1c29vlm19 {
+            display: none;
+        }
+    </style>
+""", unsafe_allow_html=True)
+    
+    st.markdown("# 🎓 Aprova")  
+    st.markdown("*Este projeto foi desenvolvido durante a **Imersão IA** da **:blue[Alura]** em parceria com o **:blue[G]:red[o]:orange[o]:blue[g]:green[l]:red[e] :violet[Gemini]***.")
+  
+    st.markdown("# 🎈 Extras") 
+    st.text("Conheça o Aprovadinho, o chatbot da plataforma, e tire suas dúvidas sobre os principais vestibulares do Brasil.")
+    if st.button("Aprovadinho", use_container_width=True, key="aprovadinho_sidebar_1_button"):
+        st.switch_page("pages/aprovadinho.py")
+        
+    st.write("")
+        
+    st.text("Faça o teste vocacional agora e descubra qual carreira combina mais com você.")
+    if st.button("Teste vocacional", use_container_width=True, key="teste_sidebar_1_button"):
+        st.switch_page("pages/teste.py")
+        
+    st.write("")
+    st.markdown("😼 GitHub do projeto [aqui](https://github.com/matheusaudibert/projeto-aprova)!")
 
 col1, col2 = st.columns([1, 7])
 with col2:
