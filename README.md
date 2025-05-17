@@ -1,8 +1,11 @@
 <div align="center">
   <img src="assets/aprovadinho/aprovadinho_bot_round.png" alt="Aprovadinho Logo" width="150px"/>
 </div>
-
+<br>
 <p align="center">
+  <a href="https://projeto-aprova.streamlit.app" target="_blank" rel="noopener noreferrer">
+    <img src="https://img.shields.io/badge/website-%23007ACC?style=flat-square&logo=google-chrome&logoColor=white" alt="Site" />
+  </a>
   <a href="https://github.com/matheusaudibert/projeto-aprova/stargazers">
     <img src="https://img.shields.io/github/stars/matheusaudibert/projeto-aprova?color=60B4FF&logo=github&style=flat-square" alt="GitHub Stars">
   </a>
