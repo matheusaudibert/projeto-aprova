@@ -61,7 +61,7 @@ Este projeto foi desenvolvido durante a **Imersão IA**, uma iniciativa da [**Al
 
 <div style="display: flex; justify-content: center;">
   <img src="assets/outros/alura.png" alt="Alura" width="20%" />
-  <img src="assets/outros/gemini.png" alt="Google Gemini" width="20%" />
+  <img src="assets/outros/gemini.png" alt="Google Gemini" width="24%" />
 </div>
 
 ## 💻 Tecnologias
