@@ -4,24 +4,3 @@ backgroundColor = "#ffffff"
 secondaryBackgroundColor = "#e8e8e8"
 textColor = "#000000"
 font = "sans serif"
-
-# Padrão Claro
-# primaryColor = "#60B4FF"
-# backgroundColor = "#ffffff"
-# secondaryBackgroundColor = "#e8e8e8"
-# textColor = "#000000"
-# font = "sans serif"
-
-# Padrão Claro
-# primaryColor = "#60B4FF"
-# backgroundColor = "#000000"
-# secondaryBackgroundColor = "#1e1e1e"
-# textColor = "#ffffff"
-# ont = "sans serif"
-
-# Padrão GitHub
-# primaryColor = "#60B4FF"
-# backgroundColor = "#0D1117"
-# secondaryBackgroundColor = "#30363D"
-# textColor = "#ffffff"
-# font = "sans serif"

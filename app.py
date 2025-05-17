@@ -1,8 +1,10 @@
 import streamlit as st
 from renders import inicio, provas, resumos, exercicios, redacoes, livros, vestibulares, correcao, datas, canais
 from streamlit_plugins.components.theme_changer import st_theme_changer
-from streamlit_plugins.components.theme_changer.entity import ThemeInfo, ThemeInput, ThemeBaseLight
-
+from streamlit_plugins.components.theme_changer.entity import ThemeInfo, ThemeInput, ThemeBaseLight, ThemeBaseDark
+print(ThemeBaseLight.bodyFont)
+print(ThemeBaseLight.codeFont)
+print(ThemeBaseLight.fontFaces)
 st.set_page_config(
     page_title="Prataforma Aprova",
     initial_sidebar_state="expanded",
@@ -55,7 +57,7 @@ with st.sidebar:
     st.markdown("😼 GitHub do projeto [aqui](https://github.com/matheusaudibert/projeto-aprova)!")
 
 
-theme_data = dict(
+init_theme_data = dict(
     light_day=ThemeInput(
         name="Light Day",
         icon=":material/light_mode:", 
@@ -66,7 +68,10 @@ theme_data = dict(
             backgroundColor="#ffffff",
             secondaryBackgroundColor="#e8e8e8",
             textColor="#000000",
-            fontFaces=ThemeBaseLight.fontFaces,
+            fontSizes={
+                "bodyFont": 16,
+                "codeFont": 16,
+            },
         )
     ),
     dark_night=ThemeInput(
@@ -79,33 +84,10 @@ theme_data = dict(
             backgroundColor="#000000",
             secondaryBackgroundColor="##1e1e1e",
             textColor="#ffffff",
-            fontFaces=ThemeBaseLight.fontFaces,
-        )
-    ),
-    github=ThemeInput(
-        name="GitHub",
-        icon=":material/code:",
-        order=2,
-        themeInfo=ThemeInfo(
-            base=ThemeBaseLight.base,
-            primaryColor="#60B4FF",
-            backgroundColor="#0D1117",
-            secondaryBackgroundColor="#30363D",
-            textColor="#ffffff",
-            fontFaces=ThemeBaseLight.fontFaces,
-        )
-    ),
-    dracula=ThemeInput(
-        name="Dracula",
-        icon=":material/menstrual_health:",
-        order=2,
-        themeInfo=ThemeInfo(
-            base=ThemeBaseLight.base,
-            primaryColor="#ff79c6",
-            backgroundColor="#282a36",
-            secondaryBackgroundColor="#44475a",
-            textColor="#f8f8f2",
-            fontFaces=ThemeBaseLight.fontFaces,
+            fontSizes={
+                "bodyFont": 16,
+                "codeFont": 16,
+            },
         )
     ),
     discord=ThemeInput(
@@ -118,14 +100,54 @@ theme_data = dict(
             backgroundColor="#1e2124",
             secondaryBackgroundColor="#282b30",
             textColor="#f8f8f2",
-            fontFaces=ThemeBaseLight.fontFaces,
+            fontSizes={
+                "bodyFont": 16,
+                "codeFont": 16,
+            },
+            
+        )
+    ),
+    dracula=ThemeInput(
+        name="Dracula",
+        icon=":material/menstrual_health:",
+        order=3,
+        themeInfo=ThemeInfo(
+            base=ThemeBaseLight.base,
+            primaryColor="#ff79c6",
+            backgroundColor="#282a36",
+            secondaryBackgroundColor="#44475a",
+            textColor="#f8f8f2",
+            fontSizes={
+                "bodyFont": 16,
+                "codeFont": 16,
+            },
+            
+        )
+    ),
+    github=ThemeInput(
+        name="GitHub",
+        icon=":material/code:",
+        order=4,
+        themeInfo=ThemeInfo(
+            base=ThemeBaseLight.base,
+            primaryColor="#60B4FF",
+            backgroundColor="#0D1117",
+            secondaryBackgroundColor="#30363D",
+            textColor="#ffffff",
+            fontSizes={
+                "bodyFont": 16,
+                "codeFont": 16,
+            },
         )
     ),
 )
+
+if st.session_state.get("theme_data") is None:
+    st.session_state["theme_data"] = init_theme_data
+    
+theme_data = st.session_state["theme_data"]
   
-st_theme_changer(themes_data=theme_data, render_mode="pills", rerun_whole_st=True, key="secondary_pills")
-
-
+st_theme_changer(themes_data=theme_data, render_mode="pills", default_init_theme_name="dracula")
 
 tab_inicio, tab_vestibulares, tab_resumos, tab_exercicios, tab_provas, tab_redacoes, tab_correcao, tab_livros, tab_datas, tab_canais = st.tabs(["Início", "Vestibulares", "Resumos", "Exercícios", "Provas", "Redações", "Correção", "Leituras Obrigatórias", "Datas", "Canais"])
 
