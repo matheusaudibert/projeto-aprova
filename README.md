@@ -17,15 +17,6 @@ Uma plataforma completa para ajudar estudantes na preparação para os principai
 
 ![Preview](assets/preview.png)
 
-## 🧧 Tabela de conteúdos
-
-- [🤖 Aprovadinho](#🤖-aprovadinho)
-- [🧠 Teste Vocacional](#🧠-teste-vocacional)
-- [🔧 Funcionalidades](#🔧-funcionalidades)
-- [🤔 Contexto do projeto](#🤔-contexo-do-projeto)
-- [😸 Contribuições](#😸-contribuições)
-- [🎈 Curiosidade](#🎈-curiosidade)
-
 ## 🤖 Aprovadinho
 
 O Aprovadinho é um chatbot inteligente criado para te acompanhar em cada etapa da sua preparação para o vestibular, oferecendo respostas rápidas, resumos objetivos, dicas estratégicas e orientações personalizadas que facilitam sua jornada rumo à aprovação.
