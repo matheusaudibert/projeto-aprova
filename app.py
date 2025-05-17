@@ -8,15 +8,6 @@ st.set_page_config(
     layout="centered",
 )
 
-st.markdown("""
-    <meta property="og:title" content="Plataforma Aprova" />
-    <meta property="og:description" content="Resumos, exercícios, redações nota máxima e muito mais para ENEM, Fuvest e Unicamp." />
-    <meta property="og:image" content="https://github.com/matheusaudibert/projeto-aprova/blob/main/assets/preview.png?raw=true" />
-    <meta property="og:type" content="website" />
-    <meta property="og:url" content="https://projeto-aprova.streamlit.app/" />
-""", unsafe_allow_html=True)
-
-
 tab_inicio, tab_vestibulares, tab_resumos, tab_exercicios, tab_provas, tab_redacoes, tab_correcao, tab_livros, tab_datas, tab_canais = st.tabs(["Início", "Vestibulares", "Resumos", "Exercícios", "Provas", "Redações", "Correção", "Leituras", "Datas", "Canais"])
 with st.sidebar:
   sidebar.render()

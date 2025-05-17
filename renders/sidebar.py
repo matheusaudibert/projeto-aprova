@@ -11,6 +11,10 @@ def render():
         .st-emotion-cache-vz9k5h.e1c29vlm19 {
             display: none;
         }
+        
+        .st-emotion-cache-14lrqrc.e1c29vlm19 {
+            display: none;
+        }
     </style>
 """, unsafe_allow_html=True)
 
