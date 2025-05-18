@@ -79,9 +79,11 @@ Se você quiser ajudar a melhorar este projeto, fique à vontade para abrir issu
 
 ## 🎈 Curiosidade
 
-A plataforma possui 5 temas disponíveis: **light**, **dark** e **mais três outros temas especiais**.
+A plataforma possuia 5 temas disponíveis _(foram removidos por inconsistencia)_: **light**, **dark** e **mais três outros temas especiais**.
 Esses temas extras foram inspirados nos estilos de temas muito populares, como os do [**GitHub**](), [**Discord**](https://discord.com) e o [**Dracula Theme**](https://github.com/dracula/dracula-theme), que é um tema bastante usado no VS Code, e detalhe, _**é brasileiro**_.
 
 ![Themes](assets/themes.png)
+
+Agora o tema oficial e o do **Dracula**.
 
 _fique à vontade para mostrar seu apoio e dar uma ⭐ estrela para este repositório! Isso significa muito, obrigado :)_
