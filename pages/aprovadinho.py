@@ -70,10 +70,33 @@ with st.sidebar:
         .st-emotion-cache-1tuwfdi.e1c29vlm19 {
             display: none;
         }
+        
+        .st-emotion-cache-1gczx66.edtmxes2 {
+            display: none;
+        }
+        
+        .st-emotion-cache-1s1exd7.edtmxes19 {
+            display: none;
+        }
+        
+        .st-emotion-cache-1gczx66.edtmxes2 {
+            display: none;
+        }
+        .st-emotion-cache-1s1exd7.edtmxes19 {
+            display: none;
+        }
+
+        .st-emotion-cache-1s1exd7.edtmxes19 {
+            display: none;
+        }
+        
+        .st-emotion-cache-1gczx66.edtmxes2 {
+            display: none;
+        }
     </style>
 """, unsafe_allow_html=True)
     
-    st.markdown("Tema: Dracula")
+    st.markdown("**Tema: Dracula 🧛‍♀️**")
     st.markdown("# 🎓 Aprova")  
     st.markdown("*Este projeto foi desenvolvido durante a **Imersão IA** da **:blue[Alura]** em parceria com o **:blue[G]:red[o]:orange[o]:blue[g]:green[l]:red[e] :violet[Gemini]***.")
   
