@@ -1,11 +1,10 @@
 import streamlit as st
-import webbrowser
 from constants.tests import enem_tests, fuvest_tests, unicamp_tests
 
 def display_button_pair(prova_url, resolucao_url, prefix, key_suffix):
     col1, col2 = st.columns(2)
     with col1:
-        st.link_button(f"Prova {prefix}", url=prova_url, use_container_width=True, type="primary")
+        st.link_button(f"Prova {prefix}", prova_url, use_container_width=True, type="primary")
     with col2:
         st.link_button(f"Resolução {prefix}", resolucao_url, use_container_width=True, type="secondary")
 
