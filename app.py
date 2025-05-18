@@ -1,7 +1,7 @@
 import streamlit as st
 from renders import inicio, provas, resumos, exercicios, redacoes, livros, vestibulares, correcao, datas, canais
 from streamlit_plugins.components.theme_changer import st_theme_changer
-from streamlit_plugins.components.theme_changer.entity import ThemeInfo, ThemeInput, ThemeBaseLight
+from streamlit_plugins.components.theme_changer.entity import ThemeInfo, ThemeInput, ThemeBaseLight, ThemeBaseDark
 
 st.set_page_config(
     page_title="Prataforma Aprova",
@@ -77,8 +77,8 @@ init_theme_data = dict(
         icon=":material/dark_mode:",
         order=1,
         themeInfo=ThemeInfo(
-            base=ThemeBaseLight.base,
-            primaryColor="#ffffff",
+            base=ThemeBaseDark.base,
+            primaryColor="#d6d4d4",
             backgroundColor="#000000",
             secondaryBackgroundColor="#1e1e1e",
             textColor="#ffffff",

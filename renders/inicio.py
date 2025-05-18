@@ -26,10 +26,10 @@ def render():
     st.title("🎓 Bem-vindo à :blue[APROVA]")
   with col2:
     st.markdown("<div style='margin-top:35px;'></div>", unsafe_allow_html=True)
-    selected = st.feedback("thumbs")
-    if selected == 1:
+    thumbs = st.feedback("thumbs")
+    if thumbs == 1:
       st.balloons()
-    if selected == 0:
+    if thumbs == 0:
       st.toast('Isso não foi legal!')
 
 
