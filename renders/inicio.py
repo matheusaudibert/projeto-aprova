@@ -20,11 +20,23 @@ def switch_to_tab(tab_name):
     
 
 def render():
+  
+  col1, col2 = st.columns([6, 2])
+  with col1:
+    st.title("🎓 Bem-vindo à :blue[APROVA]")
+  with col2:
+    st.markdown("<div style='margin-top:35px;'></div>", unsafe_allow_html=True)
+    selected = st.feedback("thumbs")
+    if selected == 1:
+      st.balloons()
+    if selected == 0:
+      st.toast('Isso não foi legal!')
 
-  st.title("🎓 Bem-vindo à :blue[APROVA]")
+
   st.markdown("A plataforma criada por vestibulandos para vestibulandos.")
   st.markdown("Na :blue[APROVA], você encontra tudo o que precisa para conquistar sua vaga nas principais universidades de São Paulo, com o poder da :blue[Inteligência Aritificial] te guiando em cada etapa.")
  
+  
   st.write("")
   
   st.markdown("""

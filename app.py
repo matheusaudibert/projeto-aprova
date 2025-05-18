@@ -1,7 +1,7 @@
 import streamlit as st
 from renders import inicio, provas, resumos, exercicios, redacoes, livros, vestibulares, correcao, datas, canais
 from streamlit_plugins.components.theme_changer import st_theme_changer
-from streamlit_plugins.components.theme_changer.entity import ThemeInfo, ThemeInput, ThemeBaseLight, ThemeBaseDark
+from streamlit_plugins.components.theme_changer.entity import ThemeInfo, ThemeInput, ThemeBaseLight
 
 st.set_page_config(
     page_title="Prataforma Aprova",
