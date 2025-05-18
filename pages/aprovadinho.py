@@ -115,7 +115,7 @@ with col2:
 
 with col3:
     if st.button("Possíveis temas de redação", use_container_width=True, key="3", type="secondary"):
-        user_input = "Me forneça os principais canais do youtube para estudar para o vestibular."  
+        user_input = "Me diga possíveis temas de redação para o vestibulares da Unicamp e Fuvest 2026 e ENEM 2025."  
     
 load_dotenv()
 API_KEY = os.getenv('GEMINI_API_KEY')
