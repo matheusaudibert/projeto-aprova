@@ -27,10 +27,17 @@ def render():
   with col2:
     st.markdown("<div style='margin-top:35px;'></div>", unsafe_allow_html=True)
     thumbs = st.feedback("thumbs")
-    if thumbs == 1:
-      st.balloons()
-    if thumbs == 0:
-      st.toast('Isso não foi legal!')
+    if "feedback_triggered" not in st.session_state:
+      st.session_state.feedback_triggered = False
+
+    if thumbs is not None and not st.session_state.feedback_triggered:
+        if thumbs == 1:
+            st.balloons()
+        elif thumbs == 0:
+            st.toast("Isso não foi legal!")
+
+        # Marca como já exibido
+        st.session_state.feedback_triggered = True
 
 
   st.markdown("A plataforma criada por vestibulandos para vestibulandos.")
