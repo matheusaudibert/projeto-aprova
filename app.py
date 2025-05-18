@@ -80,7 +80,7 @@ init_theme_data = dict(
             base=ThemeBaseLight.base,
             primaryColor="#ffffff",
             backgroundColor="#000000",
-            secondaryBackgroundColor="##1e1e1e",
+            secondaryBackgroundColor="#1e1e1e",
             textColor="#ffffff",
             fontSizes={
                 "bodyFont": 16,
