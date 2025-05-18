@@ -1,5 +1,5 @@
 import streamlit as st
-import webbrowser
+
 from constants.texts import redacoes_enem, redacoes_fuvest, redacoes_unicamp
 
 def render():

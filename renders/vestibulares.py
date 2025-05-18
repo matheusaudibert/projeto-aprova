@@ -5,7 +5,7 @@ import streamlit as st
 
 def render():
     st.markdown("<h1 style='color: #36e096;'>Vestibulares</h1>", unsafe_allow_html=True)
-    st.text("Nesta seção, você vai conhecer os detalhes dos três vestibulares mais importantes para quem quer estudar nas maiores universidades públicas de São Paulo e do país: ENEM, FUVEST e UNICAMP. Descubra como funciona cada prova, o que elas cobram, e quais caminhos elas abrem para o seu futuro. Informação clara e direta, para te ajudar a escolher a melhor estratégia de preparação.")
+    st.text("Conheça os três principais vestibulares para entrar nas maiores universidades públicas de São Paulo e do Brasil: ENEM, FUVEST e UNICAMP. Entenda como cada prova funciona, o que é cobrado e quais oportunidades elas oferecem. Informação clara para te ajudar a traçar a melhor estratégia de estudo.")
     
     st.divider()
   

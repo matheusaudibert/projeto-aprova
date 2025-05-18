@@ -135,12 +135,13 @@ else:
         
         with st.status("Gerando resposta do teste vocacional...", expanded=True):
             st.write("Analisando respostas...")
-            time.sleep(2)
+            time.sleep(3)
             st.write("Procurando cursos...")
-            time.sleep(1)
-            st.write("Formatando resposta...")
-            time.sleep(1)
+            time.sleep(3)
             analysis = generate_vocational_response(formatted_answers)
+            st.write("Formatando resposta...")
+            time.sleep(3)
+            
             
         with st.container(border=True):
             st.markdown("### 🎯 Sua Análise Vocacional")

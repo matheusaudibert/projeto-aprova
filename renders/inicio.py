@@ -182,7 +182,7 @@ def render():
   
   st.markdown("""
     <div style='text-align: center; font-family: "Segoe UI Emoji", "Apple Color Emoji", "Noto Color Emoji", sans-serif;'>
-        Feito com carinho ❤ por Matheus Audibert
+        Feito com carinho ❤ por <a href="https://github.com/matheusaudibert" target="_blank">Matheus Audibert</a>
     </div>
 """, unsafe_allow_html=True)
 

@@ -2,9 +2,7 @@ import streamlit as st
 from renders import inicio, provas, resumos, exercicios, redacoes, livros, vestibulares, correcao, datas, canais
 from streamlit_plugins.components.theme_changer import st_theme_changer
 from streamlit_plugins.components.theme_changer.entity import ThemeInfo, ThemeInput, ThemeBaseLight, ThemeBaseDark
-print(ThemeBaseLight.bodyFont)
-print(ThemeBaseLight.codeFont)
-print(ThemeBaseLight.fontFaces)
+
 st.set_page_config(
     page_title="Prataforma Aprova",
     initial_sidebar_state="expanded",
@@ -64,7 +62,7 @@ init_theme_data = dict(
         order=0,
         themeInfo=ThemeInfo(
             base=ThemeBaseLight.base,
-            primaryColor="#60B4FF",
+            primaryColor="#000000",
             backgroundColor="#ffffff",
             secondaryBackgroundColor="#e8e8e8",
             textColor="#000000",
@@ -80,7 +78,7 @@ init_theme_data = dict(
         order=1,
         themeInfo=ThemeInfo(
             base=ThemeBaseLight.base,
-            primaryColor="#60B4FF",
+            primaryColor="#ffffff",
             backgroundColor="#000000",
             secondaryBackgroundColor="##1e1e1e",
             textColor="#ffffff",
@@ -130,9 +128,9 @@ init_theme_data = dict(
         order=4,
         themeInfo=ThemeInfo(
             base=ThemeBaseLight.base,
-            primaryColor="#60B4FF",
+            primaryColor="#5FED83",
             backgroundColor="#0D1117",
-            secondaryBackgroundColor="#30363D",
+            secondaryBackgroundColor="#24292e",
             textColor="#ffffff",
             fontSizes={
                 "bodyFont": 16,
@@ -147,10 +145,8 @@ if st.session_state.get("theme_data") is None:
     
 theme_data = st.session_state["theme_data"]
   
-st_theme_changer(themes_data=theme_data, render_mode="pills", default_init_theme_name="dracula")
-
+st_theme_changer(themes_data=theme_data, render_mode="pills")
 tab_inicio, tab_vestibulares, tab_resumos, tab_exercicios, tab_provas, tab_redacoes, tab_correcao, tab_livros, tab_datas, tab_canais = st.tabs(["Início", "Vestibulares", "Resumos", "Exercícios", "Provas", "Redações", "Correção", "Leituras Obrigatórias", "Datas", "Canais"])
-
 
 with tab_inicio:
   inicio.render()

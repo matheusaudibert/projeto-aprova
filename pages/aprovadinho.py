@@ -21,7 +21,7 @@ def display_message(text, sender):
     if sender == "user":
         avatar = "assets/aprovadinho/aprovadinho_user.png"
         color = "#ffffff" 
-        name_color = "#995EA9"  # verde
+        name_color = "#995EA9" 
         name = "Você"
         align = "flex-end"
         text_align = "right"
@@ -29,11 +29,11 @@ def display_message(text, sender):
     else:
         avatar = "assets/aprovadinho/aprovadinho_bot.png"
         color = "#ffffff"
-        name_color = "#60B4FF"  # amarelo
+        name_color = "#60B4FF" 
         name = "Aprovadinho"
         align = "flex-start"
         text_align = "left"
-        bg_color = "#1e2124"
+        bg_color = "#26282b"
 
     st.markdown(f"""
     <div style="display: flex; justify-content: {align}; margin: 10px 0;">
@@ -113,7 +113,7 @@ with col2:
         user_input = "Quais são as maiores notas de corte dos vestibulares?"
 
 with col3:
-    if st.button("Aulas no youtube", use_container_width=True, key="3", type="secondary"):
+    if st.button("Possíveis temas de redação", use_container_width=True, key="3", type="secondary"):
         user_input = "Me forneça os principais canais do youtube para estudar para o vestibular."  
     
 load_dotenv()
