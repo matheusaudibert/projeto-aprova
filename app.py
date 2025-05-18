@@ -36,7 +36,7 @@ def render():
 """, unsafe_allow_html=True)
   
 with st.sidebar:
-    
+    st.markdown("**Tema: Dracula 🧛‍♀️**")
     st.markdown("# 🎓 Aprova")  
     st.markdown("*Este projeto foi desenvolvido durante a **Imersão IA** da **:blue[Alura]** em parceria com o **:blue[G]:red[o]:orange[o]:blue[g]:green[l]:red[e] :violet[Gemini]***.")
   
@@ -140,12 +140,12 @@ init_theme_data = dict(
     ),
 )
 
-if st.session_state.get("theme_data") is None:
-    st.session_state["theme_data"] = init_theme_data
+# if st.session_state.get("theme_data") is None:
+#     st.session_state["theme_data"] = init_theme_data
     
-theme_data = st.session_state["theme_data"]
+# theme_data = st.session_state["theme_data"]
   
-st_theme_changer(themes_data=theme_data, render_mode="pills")
+# st_theme_changer(themes_data=theme_data, render_mode="pills")
 tab_inicio, tab_vestibulares, tab_resumos, tab_exercicios, tab_provas, tab_redacoes, tab_correcao, tab_livros, tab_datas, tab_canais = st.tabs(["Início", "Vestibulares", "Resumos", "Exercícios", "Provas", "Redações", "Correção", "Leituras Obrigatórias", "Datas", "Canais"])
 
 with tab_inicio:

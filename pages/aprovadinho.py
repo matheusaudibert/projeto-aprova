@@ -73,6 +73,7 @@ with st.sidebar:
     </style>
 """, unsafe_allow_html=True)
     
+    st.markdown("Tema: Dracula")
     st.markdown("# 🎓 Aprova")  
     st.markdown("*Este projeto foi desenvolvido durante a **Imersão IA** da **:blue[Alura]** em parceria com o **:blue[G]:red[o]:orange[o]:blue[g]:green[l]:red[e] :violet[Gemini]***.")
   
