@@ -5,11 +5,9 @@ from constants.tests import enem_tests, fuvest_tests, unicamp_tests
 def display_button_pair(prova_url, resolucao_url, prefix, key_suffix):
     col1, col2 = st.columns(2)
     with col1:
-        if st.button(f"Prova {prefix}", key=f"{key_suffix}_prova", use_container_width=True, type="primary"):
-            webbrowser.open(prova_url)
+        st.link_button(f"Prova {prefix}", url=prova_url, use_container_width=True, type="primary")
     with col2:
-        if st.button(f"Resolução {prefix}", key=f"{key_suffix}_resolucao", use_container_width=True, type="secondary"):
-            webbrowser.open(resolucao_url)
+        st.link_button(f"Resolução {prefix}", resolucao_url, use_container_width=True, type="secondary")
 
 def render_enem(ano, data):
     with st.expander(f"ENEM {ano}", expanded=False):
