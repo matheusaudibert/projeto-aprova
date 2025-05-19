@@ -1,29 +1,29 @@
 <script>
-  const streamlitDoc = window.parent.document;
+    const streamlitDoc = window.parent.document;
 
-  const buttons = Array.from(streamlitDoc.querySelectorAll(".stButton > button"));
+    const buttons = Array.from(streamlitDoc.querySelectorAll(".stButton > button"));
 
-  console.log(buttons);
+    console.log(buttons);
 
-  const button0 = buttons.find((el) => el.innerText === "Conhecer os vestibulares");
-  const button1 = buttons.find((el) => el.innerText === "Gerar resumos");
-  const button2 = buttons.find((el) => el.innerText === "Praticar");
-  const button3 = buttons.find((el) => el.innerText === "Acessar provas");
-  const button4 = buttons.find((el) => el.innerText === "Ler textos");
-  const button5 = buttons.find((el) => el.innerText === "Corrigir texto");
-  const button6 = buttons.find((el) => el.innerText === "Checar livros");
-  const button7 = buttons.find((el) => el.innerText === "Ver datas");
-  const button8 = buttons.find((el) => el.innerText === "Falar com o Aprovadinho");
-  const button9 = buttons.find((el) => el.innerText === "Fazer o teste");
-  const button10 = buttons.find((el) => el.innerText === "Voltar");
-  const button11 = buttons.find((el) => el.innerText === "Aprovadinho");
-  const button12 = buttons.find((el) => el.innerText === "Teste vocacional");
-  const button13 = buttons.find((el) => el.innerText === "VoItar");
-  const button14 = buttons.find((el) => el.innerText === "Conferir canais");
-  const button15 = buttons.find((el) => el.innerText === "Iniciar o teste");
+    const button0 = buttons.find((el) => el.innerText === "Conhecer os vestibulares");
+    const button1 = buttons.find((el) => el.innerText === "Gerar resumos");
+    const button2 = buttons.find((el) => el.innerText === "Praticar");
+    const button3 = buttons.find((el) => el.innerText === "Acessar provas");
+    const button4 = buttons.find((el) => el.innerText === "Ler textos");
+    const button5 = buttons.find((el) => el.innerText === "Corrigir texto");
+    const button6 = buttons.find((el) => el.innerText === "Checar livros");
+    const button7 = buttons.find((el) => el.innerText === "Ver datas");
+    const button8 = buttons.find((el) => el.innerText === "Falar com o Aprovadinho");
+    const button9 = buttons.find((el) => el.innerText === "Fazer o teste");
+    const button10 = buttons.find((el) => el.innerText === "Voltar");
+    const button11 = buttons.find((el) => el.innerText === "Aprovadinho");
+    const button12 = buttons.find((el) => el.innerText === "Teste vocacional");
+    const button13 = buttons.find((el) => el.innerText === "VoItar");
+    const button14 = buttons.find((el) => el.innerText === "Conferir canais");
+    const button15 = buttons.find((el) => el.innerText === "Iniciar o teste");
 
-  // Função para aplicar estilo de botão com efeito pressionado
-  function estilizarBotao(botao, corNormal, corPressionado) {
+    // Função para aplicar estilo de botão com efeito pressionado
+    function estilizarBotao(botao, corNormal, corPressionado) {
     if (!botao) return;
 
     botao.style.backgroundColor = corNormal;
@@ -33,28 +33,34 @@
     botao.onmousedown = () => {
       botao.style.backgroundColor = corPressionado;
     };
-    botao.onmouseup = () => {
-      botao.style.backgroundColor = corNormal;
-    };
+
     botao.onmouseleave = () => {
       botao.style.backgroundColor = corNormal;
     };
+
+    botao.onmouseover = () => {
+      botao.style.color = "white";  // texto branco no hover
+    };
+
+    botao.onmouseout = () => {
+      botao.style.color = "white";  // volta para cor padrão quando tira o mouse
+    };
   }
 
-  estilizarBotao(button0, "#36e096", "#29ab73");
-  estilizarBotao(button1, "#f26679", "#c75463");
-  estilizarBotao(button2, "#f26679", "#c75463");
-  estilizarBotao(button3, "#F697DB", "#e980c7");
-  estilizarBotao(button4, "#FFB530", "#db9d2c");
-  estilizarBotao(button5, "#d39eff", "#b185d6");
-  estilizarBotao(button6, "#7144EE", "#633ccf");
-  estilizarBotao(button7, "#b0e1ff", "#a2cee8");
-  estilizarBotao(button8, "#60B4FF", "#4A9AD9");
-  estilizarBotao(button9, "#f08671", "#d97966");
-  estilizarBotao(button10, "#60B4FF", "#4A9AD9");
-  estilizarBotao(button11, "#60B4FF", "#4A9AD9");
-  estilizarBotao(button12, "#f08671", "#d97966");
-  estilizarBotao(button13, "#f08671", "#d97966");
-  estilizarBotao(button14, "#fc5353", "#c94444");
-  estilizarBotao(button15, "#f08671", "#d97966");
+    estilizarBotao(button0, "#36e096", "#29ab73");
+    estilizarBotao(button1, "#f26679", "#c75463");
+    estilizarBotao(button2, "#f26679", "#c75463");
+    estilizarBotao(button3, "#F697DB", "#e980c7");
+    estilizarBotao(button4, "#FFB530", "#db9d2c");
+    estilizarBotao(button5, "#d39eff", "#b185d6");
+    estilizarBotao(button6, "#7144EE", "#633ccf");
+    estilizarBotao(button7, "#b0e1ff", "#a2cee8");
+    estilizarBotao(button8, "#60B4FF", "#4A9AD9");
+    estilizarBotao(button9, "#f08671", "#d97966");
+    estilizarBotao(button10, "#60B4FF", "#4A9AD9");
+    estilizarBotao(button11, "#60B4FF", "#4A9AD9");
+    estilizarBotao(button12, "#f08671", "#d97966");
+    estilizarBotao(button13, "#f08671", "#d97966");
+    estilizarBotao(button14, "#fc5353", "#c94444");
+    estilizarBotao(button15, "#f08671", "#d97966");
 </script>
