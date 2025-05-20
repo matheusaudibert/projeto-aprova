@@ -84,6 +84,6 @@ Esses temas extras foram inspirados em estilos de temas muito populares, como os
 
 ![Themes](assets/themes.png)
 
-Agora o tema oficial e o do **Dracula**.
+Agora o tema oficial da plataforma é o **Dracula**.
 
 _fique à vontade para mostrar seu apoio e dar uma ⭐ estrela para este repositório! Isso significa muito, obrigado :)_
