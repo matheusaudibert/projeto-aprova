@@ -79,8 +79,8 @@ Se você quiser ajudar a melhorar este projeto, fique à vontade para abrir issu
 
 ## 🎈 Curiosidade
 
-A plataforma possuia 5 temas disponíveis _(foram removidos por inconsistencia)_: **light**, **dark** e **mais três outros temas especiais**.
-Esses temas extras foram inspirados nos estilos de temas muito populares, como os do [**GitHub**](), [**Discord**](https://discord.com) e o [**Dracula Theme**](https://github.com/dracula/dracula-theme), que é um tema bastante usado no VS Code, e detalhe, _**é brasileiro**_.
+A plataforma possuia 5 temas disponíveis _(foram removidos por inconsistência)_: **light**, **dark** e **mais três outros temas especiais**.
+Esses temas extras foram inspirados em estilos de temas muito populares, como os do [**GitHub**](), [**Discord**](https://discord.com) e o [**Dracula Theme**](https://github.com/dracula/dracula-theme), que é um tema bastante usado no VS Code, e detalhe, _**é brasileiro**_.
 
 ![Themes](assets/themes.png)
 
