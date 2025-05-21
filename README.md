@@ -16,6 +16,9 @@
   </a>
 </p>
 
+> [!NOTE]
+> Este projeto foi o vencedor da Imersão IA Alura + Google Gemini 2025!
+
 # 🎓 Plataforma Aprova
 
 Plataforma inteligente com IA para ajudar na sua preparação para os principais vestibulares de SP, com conteúdos personalizados e ferramentas que otimizam seus estudos.
