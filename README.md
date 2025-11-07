@@ -17,7 +17,7 @@
 </p>
 
 > [!NOTE]
-> Este projeto foi o vencedor da Imersão IA Alura + Google Gemini 2025!
+> Este projeto foi o vencedor da [Imersão IA Alura + Google Gemini 2025](https://grupoalura.notion.site/Imers-o-IA-Guia-de-Mergulho-1d2379bdd09b803982a5ee1abd89e0cb)!
 
 # 🎓 Plataforma Aprova
 
