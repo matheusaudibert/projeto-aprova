@@ -19,6 +19,9 @@
 > [!NOTE]
 > Este projeto foi o vencedor da [Imersão IA Alura + Google Gemini 2025](https://grupoalura.notion.site/Imers-o-IA-Guia-de-Mergulho-1d2379bdd09b803982a5ee1abd89e0cb)!
 
+# Ei, eu fiz um vídeo sobre esse projeto
+[![YouTube Card](https://ytcards.audibert.dev/api/aO3A4S2ag8s?width=250&theme=github&background_color=60B4f0&max_title_lines=1&show_duration=false)](https://youtube.com/watch?v=aO3A4S2ag8s)
+
 # 🎓 Plataforma Aprova
 
 Plataforma inteligente com IA para ajudar na sua preparação para os principais vestibulares de SP, com conteúdos personalizados e ferramentas que otimizam seus estudos.
